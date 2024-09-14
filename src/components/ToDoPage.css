@@ -1,0 +1,347 @@
+/* General Container Styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f8f9fa; /* Light background for a clean look */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Profile Section Styles */
+.profile-section {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  margin-bottom: 30px;
+  border: 1px solid #e2e6ea; /* Light grey border for subtle separation */
+  transition: all 0.3s ease;
+}
+
+.profile-section.visible {
+  display: block;
+}
+
+.profile-section.hidden {
+  display: none;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.profile-header h1 {
+  font-size: 32px;
+  color: #343a40;
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #ff6f61; /* Coral color for the logout button */
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e55d50; /* Darker coral on hover */
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 4px solid #007bff; /* Blue border for the profile image */
+}
+
+/* Weather Container Styles */
+.weather-container {
+  margin-bottom: 25px;
+}
+
+.weather-container h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.weather-container p {
+  font-size: 18px;
+  color: #495057;
+}
+
+.location-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.location-input input {
+  border: 1px solid #ced4da;
+  padding: 12px;
+  border-radius: 8px;
+  margin-right: 12px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.location-input button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.location-input button:hover {
+  background-color: #0056b3;
+}
+
+/* To-Do Section Styles */
+.todo-section {
+  width: 100%;
+  max-width: 1200px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border: 1px solid #e2e6ea;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.todo-section h2 {
+  font-size: 32px;
+  color: #343a40;
+  margin-bottom: 25px;
+}
+
+form {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #495057;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.tasks-list {
+  margin-top: 25px;
+}
+
+.tasks-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tasks-list li {
+  padding: 15px;
+  border-bottom: 1px solid #e2e6ea;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.tasks-list li:last-child {
+  border-bottom: none;
+}
+
+.tasks-list .task-info {
+  flex: 1;
+}
+
+.tasks-list .task-info span {
+  display: block;
+  font-size: 16px;
+  color: #495057;
+}
+
+.tasks-list button {
+  background-color: #ff6f61;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.tasks-list button:hover {
+  background-color: #e55d50;
+}
+
+.tasks-list button.complete {
+  background-color: #28a745;
+}
+
+.tasks-list button.complete:hover {
+  background-color: #218838;
+}
+
+/* Toggle Buttons Styles */
+.toggle-profile-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: fixed;
+  left: 20px;
+  top: 20px;
+  z-index: 1000;
+}
+
+.toggle-profile-button:hover {
+  background-color: #0056b3;
+}
+
+/* Delete Button Styles */
+.delete-button {
+  background-color: #dc3545; /* Bootstrap danger color */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+/* Light Theme Specific Styles */
+.light-theme .container {
+  background-color: #f8f9fa;
+  color: #000000;
+}
+
+.light-theme .profile-section {
+  background: #ffffff;
+  border: 1px solid #e2e6ea;
+}
+
+.light-theme .todo-section {
+  background: #ffffff;
+  border: 1px solid #e2e6ea;
+}
+
+.light-theme .tasks-list li {
+  background: #f8f9fa;
+  color: #495057;
+}
+
+.light-theme .location-input button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.light-theme .btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.light-theme .logout-button {
+  background-color: #ff6f61;
+  color: #ffffff;
+}
+
+.light-theme .profile-img {
+  border: 4px solid #007bff;
+}
+
+/* Dark Theme Specific Styles */
+.dark-theme .container {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark-theme .profile-section {
+  background: #444444;
+  border: 1px solid #666666;
+}
+
+.dark-theme .todo-section {
+  background: #444444;
+  border: 1px solid #666666;
+}
+
+.dark-theme .tasks-list li {
+  background: #555555;
+  color: #ffffff;
+}
+
+.dark-theme .location-input button {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.dark-theme .btn-primary {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.dark-theme .logout-button {
+  background-color: #ff6f61;
+  color: #ffffff;
+}
+
+.dark-theme .profile-img {
+  border: 4px solid #007bff;
+}
